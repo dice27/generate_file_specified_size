@@ -3,7 +3,7 @@
 import random
 
 
-def write(path, val):
+def _write(path, val):
     file = open(path, 'w')
     lst = [chr(c) for c in range(48,58)+range(65,91)+range(97,123)]
     for i in xrange(int(val)):
@@ -19,4 +19,4 @@ with open('setting/path.conf', 'r') as fh:
         path_val = line.strip().split("=")
         path = path_val[0]
         val = path_val[1]
-        write(path, val)
+        _write(path, val)
