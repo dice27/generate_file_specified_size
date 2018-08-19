@@ -2,12 +2,14 @@
 # -*- coding: utf-8 -*-
 import random
 
+
 def write(path, val):
     file = open(path, 'w')
     lst = [chr(c) for c in range(48,58)+range(65,91)+range(97,123)]
     for i in xrange(int(val)):
         file.write(random.choice(lst).strip())
     file.close
+
 
 with open('setting/path.conf', 'r') as fh:
     for line in fh:
