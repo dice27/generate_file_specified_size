@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+"""Generate file(s) of specified size."""
+
 import random
 
 
